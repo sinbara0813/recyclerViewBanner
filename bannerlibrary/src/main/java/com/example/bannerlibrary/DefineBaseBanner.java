@@ -227,6 +227,11 @@ public abstract class DefineBaseBanner<E, VH extends RecyclerView.ViewHolder,T e
         return (T) this;
     }
 
+    public T setLoop(boolean is){
+        this.isLoopEnable=is;
+        return (T)this;
+    }
+
     public T setBottomPadding(int bottomPadding){
         mLlBottomBar.setPadding(mLlBottomBar.getPaddingLeft(), mLlBottomBar.getPaddingTop(),mLlBottomBar.getPaddingRight(), dip2px(bottomPadding));
         return (T) this;
