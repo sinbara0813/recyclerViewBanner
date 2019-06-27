@@ -333,6 +333,7 @@ public abstract class DefineBaseBanner<E, VH extends RecyclerView.ViewHolder,T e
                 mInternalPageListener.onPageSelected(adaptPosition%mDatas.size());
             }
         };
+        recyclerView.setOnFlingListener(null);
         snapHelper.attachToRecyclerView(recyclerView);
     }
 
